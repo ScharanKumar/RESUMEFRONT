@@ -1,0 +1,50 @@
+.container15{
+    background-color: aqua;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card15{
+    margin-left: 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.box15{
+    margin-left: 50px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 90vw;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.head15{
+    font-size: 30px;
+    color: blueviolet;
+    text-align: center;
+}
+.x15{
+    margin-right: 20px;
+}
+.but15{
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: blue;
+}

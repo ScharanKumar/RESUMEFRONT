@@ -1,0 +1,10 @@
+.x222{
+    background-color: antiquewhite;
+    margin: 20px;
+    width: 75%;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
