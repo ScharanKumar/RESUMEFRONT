@@ -21,7 +21,8 @@ class AdminJobs extends Component{
       const options2 = {
         method:"GET",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            Accept: "application/json",
           }
     }
       const responsedata1=await fetch("https://resumeb-ckmd.onrender.com/jobs/get",options2) 
@@ -41,20 +42,32 @@ class AdminJobs extends Component{
               closeson
           }
           console.log(data)
+
           const options = {
-              method:"POST",
-              headers: {
-                  "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data),
-          }
+            method: "POST",
+            headers: {
+               "Content-Type": "application/json",
+               Accept: "application/json",
+            },
+            body: JSON.stringify(data),      
+          };
+
+          // const options = {
+          //     method:"POST",
+          //     headers: {
+          //         "Content-Type": "application/json"
+          //       },
+          //       body: JSON.stringify(data),
+          // }
           const response=await fetch("https://resumeb-ckmd.onrender.com/jobs/post",options)
           const data1 = await response.text()
           console.log(data1)
           const options1 = {
             method:"GET",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                Accept: "application/json",
+
               }
         }
           const responsedata=await fetch("https://resumeb-ckmd.onrender.com/jobs/get/",options1) 
@@ -84,7 +97,9 @@ class AdminJobs extends Component{
     const options1 = {
       method:"GET",
       headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          Accept: "application/json",
+
         }
   }
     const responsedata=await fetch("https://resumeb-ckmd.onrender.com/jobs/get",options1) 

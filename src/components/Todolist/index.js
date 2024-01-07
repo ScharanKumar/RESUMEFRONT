@@ -12,7 +12,9 @@ class Todolist extends Component{
       const options1 = {
         method:"DELETE",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            Accept: "application/json",
+
           }
     }
       const responsedata=await fetch(`https://resumeb-ckmd.onrender.com/delete/todo/${id}`,options1) 
@@ -21,7 +23,9 @@ class Todolist extends Component{
       const options2 = {
         method:"GET",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            Accept: "application/json",
+
           }
     }
       const responsedata1=await fetch(`https://resumeb-ckmd.onrender.com/todo/get/${name1}`,options2) 
@@ -43,7 +47,9 @@ class Todolist extends Component{
           const options = {
               method:"POST",
               headers: {
-                  "Content-Type": "application/json"
+                  "Content-Type": "application/json",
+                  Accept: "application/json",
+
                 },
                 body: JSON.stringify(data),
           }
@@ -53,7 +59,9 @@ class Todolist extends Component{
           const options1 = {
             method:"GET",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                Accept: "application/json",
+
               }
         }
           const responsedata=await fetch(`https://resumeb-ckmd.onrender.com/todo/get/${name1}`,options1) 
@@ -75,7 +83,9 @@ class Todolist extends Component{
     const options1 = {
       method:"GET",
       headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          Accept: "application/json",
+
         }
   }
     const responsedata=await fetch(`https://resumeb-ckmd.onrender.com/todo/get/${name1}`,options1) 

@@ -19,7 +19,9 @@ class CompaniesApplied extends Component{
           const options = {
               method:"GET",
               headers: {
-                  "Content-Type": "application/json"
+                  "Content-Type": "application/json",
+                  Accept: "application/json",
+
                 }
           }
           const response=await fetch(`https://resumeb-ckmd.onrender.com/jobs/get/${company}`,options)
@@ -31,7 +33,9 @@ class CompaniesApplied extends Component{
             const options1 = {
                 method:"GET",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+
                   }
             }
               const responsedata=await fetch(`https://resumeb-ckmd.onrender.com/apply/get/${id}`,options1) 

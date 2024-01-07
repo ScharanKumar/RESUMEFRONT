@@ -20,7 +20,9 @@ class Jobs extends Component{
        const options = {
         method:"POST",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            Accept: "application/json",
+
           },
           body: JSON.stringify(data),
     }
@@ -38,7 +40,9 @@ class Jobs extends Component{
     const options1 = {
       method:"GET",
       headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          Accept: "application/json",
+
         }
   }
     const responsedata=await fetch("https://resumeb-ckmd.onrender.com/jobs/get",options1) 
