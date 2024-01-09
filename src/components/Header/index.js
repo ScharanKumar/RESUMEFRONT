@@ -9,7 +9,8 @@ const Header=(props)=>{
         history.replace('/login')
     }
    return (
-    <ul className='headercon'>
+    <div className='xdiv'>
+          <ul className='headercon'>
         {/* <li className='headerli'>
         <Link className="headerx" to="/contacts">CONTACTS</Link>
     </li> */}
@@ -26,6 +27,9 @@ const Header=(props)=>{
     <button type='button' className='headerBut' onClick={x}>Log Out</button>
 
     </ul>
+    
+    
+    </div>
     
    )
 }

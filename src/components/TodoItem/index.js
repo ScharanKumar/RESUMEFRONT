@@ -9,7 +9,7 @@ const TodoItem=(props)=>{
        <div className="x222">
         <h1>{heading}</h1>
         <p>{description}</p>
-        <button type="button" onClick={x}>DELETE</button>
+        <button className="but" type="button" onClick={x}>DELETE</button>
        </div>
    )
 }

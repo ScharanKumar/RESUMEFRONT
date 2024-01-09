@@ -1,5 +1,6 @@
 .x223{
-    background-color: antiquewhite;
+    background-color: whitesmoke;
+    border-radius: 7px;
     margin: 20px;
     width: 75%;
     padding: 15px;
@@ -7,4 +8,14 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+.but{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.jobsP{
+    font-size: 18px;
+    font-family: roboto;
 }

@@ -7,11 +7,11 @@ const JobsItem=(props)=>{
     }
    return(
        <div className="x223">
-        <h1>{jobrole}</h1>
-        <p>{company}</p>
-        <p>{salary}</p>
-        <p>{closeson}</p>
-        <button type="button" onClick={x}>APPLY</button>
+        <h1 >{jobrole}</h1>
+        <p className="jobsP">Company - {company}</p>
+        <p className="jobsP">Salary - {salary}</p>
+        <p className="jobsP">Apply before - {closeson}</p>
+        <button type="button" className="but" onClick={x}>APPLY</button>
        </div>
    )
 }
